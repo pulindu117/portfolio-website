@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fab22d56da.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!------------------------header------------------------------>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Pulindu Pasanjith</span><br>from Sri Lanka</h1>
+        </div>
+    </div>
+</div>
+
+<!------------------------about------------------------------>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="3.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>I am a passionate software engineer with 10 years of experience in designing, developing, and deploying scalable applications across diverse industries. I specialize in <span>Python</span> and <span>Java</span> with a focus on delivering clean, efficient, and user-centric solutions. My expertise spans <span>Full-Stack Development</span>, <span>Cloud Integration</span>, and <span>Agile Methodologies</span>, allowing me to adapt quickly to evolving technologies and business needs. I thrive in collaborative environments and enjoy solving complex problems with innovative approaches. Currently, I am looking to leverage my skills to drive impactful projects and contribute to a forward-thinking team.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>APP Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Languages</span><br>Python, Java, Typscript, C#, C</li>
+                        <li><span>Frameworks</span><br>ReactJS, NodeJS, ExpressJS, React Native</li>
+                        <li><span>Databases & Tools</span><br>MongoDB, postgreSQL, PrismaORM, DrizzleORM</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024-2028</span><br>BSc(Hons) SLTC Research University</li>
+                        <li><span>2023</span><br>Diploma in Information Technology</li>
+                        <li><span>2018-2020</span><br>Advanced Level Royal Collage Colombo 7</li>
+                        <li><span>2015-2017</span><br>Ordinary Level Sri Dharmaloka Collage</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------------services------------------------------>
+
+<div id="services">
+    <div class="conntainer">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Designing</h2>
+                <p>Web design involves creating the visual elements and layout of a website, while coding involves translating these designs into a functional website using programming languages like HTML, CSS, and JavaScript.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Designing</h2>
+                <p>UX Design focuses on the overall feel of the experience, ensuring that products are not only functional but also enjoyable and easy to use. UI Design, on the other hand, focuses on the specific elements that users interact with on the screen, such as buttons, icons, and typography.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Designing</h2>
+                <p>Mobile App Design is a multidisciplinary field that combines elements of both art and science. It is about creating a visually appealing interface that is also functional, intuitive, and responsive.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------------portfolio------------------------------>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="4.jpg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Social media is a collection of interactive technologies that allow people to create, share, and exchange information and ideas in virtual communities</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="5.jpg">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Music is the arrangement of sound to create some combination of form, harmony, melody, rhythm, or otherwise expressive content.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="6.jpg">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Online shopping is a form of electronic commerce which allows consumers to directly buy goods or services from a seller over the Internet using a web browser or a mobile app.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!------------------------contact------------------------------>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>pulindupasanjith@gamil.com</p>
+                <p><i class="fa-solid fa-phone"></i>+94 77 178 7447</p>
+                <div class="social-icon">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-messenger"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-telegram"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="My CV.txt" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Enter Your Name" required>
+                    <input type="email" name="Email" placeholder="Enter Your Email" required>
+                    <textarea name="Message" row="10" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Made by Pulindu Pasanjith</p>
+        <p>All Right Received 2024/11/13</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"; 
+    }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzZi4REvIOKQTlSS-zMDzVTvTxttxXnP9atwa6W0Ea04OjrC9iQq4jToT3AJwMbCdc/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById('msg')
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = 'Message Sent Succesfully'
+        setTimeout(function(){
+            msg.innerHTML = ''
+        },4000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+
+</html>
